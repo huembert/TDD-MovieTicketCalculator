@@ -12,6 +12,8 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 /*
+ * http://bit.ly/2zviba6
+ * 
  * Write a program that determines the price of a movie ticket. The program asks for the 
  * customer's age and for the time on a 24-hour clock (where noon is 1200 and 4:30PM is 1630). 
  *
@@ -71,7 +73,6 @@ public class MovieTicketCalculatorTest {
 			assertEquals(expected, price);
 			assertFalse(hasException);
 		} catch (AdultException e) {
-			System.out.println("AdultException happend");
 			assertTrue(hasException);
 		}
 
